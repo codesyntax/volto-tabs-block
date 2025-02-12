@@ -1,5 +1,4 @@
 import React from 'react';
-import { withRouter } from 'react-router';
 import loadable from '@loadable/component';
 import cx from 'classnames';
 import { Icon, RenderBlocks } from '@plone/volto/components';
@@ -191,4 +190,4 @@ const View = (props) => {
 
 View.schemaEnhancer = carouselSchemaEnhancer;
 
-export default withRouter(View);
+export default View;

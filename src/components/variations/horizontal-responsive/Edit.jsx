@@ -2,7 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { useIntl } from 'react-intl';
-import { withRouter } from 'react-router';
 import { v4 as uuid } from 'uuid';
 import { isEmpty } from 'lodash';
 import cx from 'classnames';
@@ -463,4 +462,4 @@ export default compose(
       screen: state.screen,
     };
   }),
-)(withRouter(Edit));
+)(Edit);

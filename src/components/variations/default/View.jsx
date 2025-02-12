@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { compose } from 'redux';
-import { withRouter } from 'react-router';
 import cx from 'classnames';
 import { Menu, Tab, Container, Icon, Image } from 'semantic-ui-react';
 import { RenderBlocks } from '@plone/volto/components';
@@ -258,4 +257,4 @@ const View = (props) => {
   );
 };
 
-export default compose(withScrollToTarget)(withRouter(View));
+export default compose(withScrollToTarget)(View);

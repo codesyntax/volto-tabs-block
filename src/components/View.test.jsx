@@ -15,24 +15,6 @@ config.blocks.blocksConfig = {
 config.settings = {
   integratesBlockStyles: [],
 };
-jest.mock('react-router', () => ({
-  withRouter: (WrapperComponent) => (props) => {
-    return (
-      <WrapperComponent
-        {...props}
-        location={{
-          pathname: '/',
-          search: '?activeTab=tab1',
-          hash: '',
-          key: 'qruhb8',
-        }}
-        history={{
-          push: jest.fn(),
-        }}
-      />
-    );
-  },
-}));
 
 jest.mock('@eeacms/volto-block-style/StyleWrapper', () => ({
   StyleWrapperView: (props) => {

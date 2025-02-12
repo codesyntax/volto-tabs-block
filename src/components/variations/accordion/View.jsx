@@ -1,7 +1,5 @@
 import React, { useLayoutEffect } from 'react';
 import { compose } from 'redux';
-import { withRouter } from 'react-router';
-import { withResizeDetector } from 'react-resize-detector';
 import cx from 'classnames';
 import noop from 'lodash/noop';
 
@@ -209,8 +207,4 @@ const View = (props) => {
   );
 };
 
-export default compose(
-  withScrollToTarget,
-  withResizeDetector,
-  withRouter,
-)(View);
+export default compose(withScrollToTarget)(View);

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
-import { withRouter } from 'react-router';
 import cx from 'classnames';
 import { Menu, Tab, Container, Dropdown, Button } from 'semantic-ui-react';
 import { RenderBlocks } from '@plone/volto/components';
@@ -290,4 +289,4 @@ export default compose(
       screen: state.screen,
     };
   }),
-)(withRouter(View));
+)(View);

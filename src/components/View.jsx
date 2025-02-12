@@ -1,7 +1,6 @@
 import React from 'react';
 import cx from 'classnames';
 import { compose } from 'redux';
-import { withRouter } from 'react-router';
 import { StyleWrapperView } from '@eeacms/volto-block-style/StyleWrapper';
 import { TABS_BLOCK } from '@eeacms/volto-tabs-block/constants';
 import {
@@ -127,4 +126,4 @@ const View = (props) => {
   );
 };
 
-export default compose(withScrollToTarget)(withRouter(View));
+export default compose(withScrollToTarget)(View);
